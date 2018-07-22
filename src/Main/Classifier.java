@@ -31,6 +31,15 @@ public class Classifier {
 
         List<String[]> listOfData = listOfLines.subList(1, listOfLines.size());
 
+        List<List<Integer>> listOfIntegers = listOfData
+                .stream()
+                .map(x -> {
+                    return Arrays.stream(x)
+                            .map(y -> Integer.parseInt(y))
+                            .collect(Collectors.toList());
+                })
+                .collect(Collectors.toList());
+
     }
 }
 
