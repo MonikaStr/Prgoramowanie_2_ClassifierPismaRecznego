@@ -29,6 +29,7 @@ public class Classifier {
 
         System.out.println(Arrays.toString(listOfLines.get(0)));
 
+        List<String[]> listOfData = listOfLines.subList(1, listOfLines.size());
 
     }
 }
